@@ -1,7 +1,12 @@
 ### how to use
 
-> the wrapped component will have a wormhole method.
-> this.wormhole(), this.wormhole('namespace'), this.wormhole(['namespace1', 'namespace2'])
+> the wrapped class component will have a wormhole method. it can access all methods and state, prop etc...
+
+```js
+this.wormhole()
+this.wormhole('namespace')
+this.wormhole(['namespace1', 'namespace2'])
+```
 
 ```jsx
 import React, { Component } from 'react'
