@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import withWormhole, { getWormhole } from '../dist'
+import withWormhole, { getWormhole } from '../src'
+import { withTest } from './test'
 
 @withWormhole('root')
+@withTest
 class Root extends Component {
   state = {
     ts: Date.now()

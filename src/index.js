@@ -22,11 +22,7 @@ const withWormhole = componentName => {
 
   if (!componentName) throw 'componentName required'
 
-  const hoc = component => props => {
-
-    if (!component.prototype.render) {
-      return component(props)
-    }
+  return component => {
 
     const { componentDidMount, componentWillUnmount } = component.prototype
 
@@ -53,11 +49,9 @@ const withWormhole = componentName => {
 
     component.prototype.wormhole = getWormhole
 
-    return createElement(component, props)
+    return component
 
   }
-
-  return hoc
 
 }
 

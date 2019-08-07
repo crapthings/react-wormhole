@@ -1,11 +1,16 @@
 {
   "name": "@crapthings/react-wormhole",
   "description": "This hoc open a tunnel between react component.",
-  "keywords": ["react", "react-dom", "react-hoc", "hoc", "decorator"],
-  "version": "0.0.3",
+  "keywords": [
+    "react",
+    "react-dom",
+    "react-hoc",
+    "hoc",
+    "decorator"
+  ],
+  "version": "0.0.4",
   "author": "crapthings",
   "license": "MIT",
-  "private": false,
   "main": "dist/index.js",
   "repository": {
     "type": "git",
