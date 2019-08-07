@@ -2,7 +2,7 @@
   "name": "@crapthings/react-wormhole",
   "description": "This hoc open a tunnel between react component.",
   "keywords": [],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "crapthings",
   "license": "MIT",
   "private": false,
