@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import withWormhole from '../dist'
+import withWormhole, { getWormhole } from '../dist'
 
 @withWormhole('root')
 class Root extends Component {
@@ -61,6 +61,7 @@ class Nest2 extends Component {
 
   onClick = evt => {
     this.wormhole('root').setState({ ts: Date.now() })
+    console.log(getWormhole())
   }
 
   render() {
